@@ -1,1 +1,6 @@
-<resources></resources>
+<resources>
+    <string name="banner_ad_fragment_title">Banner Ad</string>
+    <string name="interstitial_ad_fragment_title">Interstitial Ad</string>
+    <string name="native_ad_fragment_title">Native Ad</string>
+    <string name="rewarded_ad_fragment_title">Rewarded Ad</string>
+</resources>

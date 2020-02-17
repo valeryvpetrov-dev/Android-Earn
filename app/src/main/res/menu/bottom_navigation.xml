@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bannerAdFragment"
+        android:icon="@drawable/ic_monetization"
+        android:title="@string/banner_ad_fragment_title" />
+
+    <item
+        android:id="@+id/interstitialAdFragment"
+        android:icon="@drawable/ic_monetization"
+        android:title="@string/interstitial_ad_fragment_title" />
+
+    <item
+        android:id="@+id/nativeAdFragment"
+        android:icon="@drawable/ic_monetization"
+        android:title="@string/native_ad_fragment_title" />
+
+    <item
+        android:id="@+id/rewardedAdFragment"
+        android:icon="@drawable/ic_monetization"
+        android:title="@string/rewarded_ad_fragment_title" />
+</menu>

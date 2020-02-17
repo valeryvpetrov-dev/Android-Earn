@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_graph"
+    app:startDestination="@id/bannerAdFragment">
+
+    <fragment
+        android:id="@+id/bannerAdFragment"
+        android:name="ru.valeryvpetrov.androidearn.presentation.BannerAdFragment"
+        android:label="@string/banner_ad_fragment_title"
+        tools:layout="@layout/fragment_banner_ad"/>
+
+    <fragment
+        android:id="@+id/interstitialAdFragment"
+        android:name="ru.valeryvpetrov.androidearn.presentation.InterstitialAdFragment"
+        android:label="@string/interstitial_ad_fragment_title"
+        tools:layout="@layout/fragment_interstitial_ad"/>
+
+    <fragment
+        android:id="@+id/nativeAdFragment"
+        android:name="ru.valeryvpetrov.androidearn.presentation.NativeAdFragment"
+        android:label="@string/native_ad_fragment_title"
+        tools:layout="@layout/fragment_native_ad"/>
+
+    <fragment
+        android:id="@+id/rewardedAdFragment"
+        android:name="ru.valeryvpetrov.androidearn.presentation.RewardedAdFragment"
+        android:label="@string/rewarded_ad_fragment_title"
+        tools:layout="@layout/fragment_rewarded_ad"/>
+</navigation>
