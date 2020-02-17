@@ -1,6 +1,7 @@
 package ru.valeryvpetrov.androidearn
 
 import android.app.Application
+import com.google.android.gms.ads.MobileAds
 import ru.valeryvpetrov.androidearn.logger.Logger
 
 class App : Application() {
@@ -14,6 +15,10 @@ class App : Application() {
         if (BuildConfig.DEBUG) {
             logger = Logger()
             logger.initDebug()
+        }
+
+        MobileAds.initialize(this) {
+            logger.d("Mobile ads initialization complete: $it")
         }
     }
 }
