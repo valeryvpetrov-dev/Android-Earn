@@ -1,7 +1,41 @@
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
-
 buildscript {
-    ext.kotlin_version = '1.3.61'
+
+    ext {
+        versionName = '1.0'
+        versionCode = 1
+
+        compileSdkVersion = 29
+        minSdkVersion = 21
+        targetSdkVersion = 29
+
+        appCompatVersion = '1.1.0'
+        androidCoreKtxVersion = '1.2.0'
+        constraintVersion = '1.1.3'
+
+        kotlinVersion = '1.3.61'
+
+        junitVersion = '4.12'
+        espressoCoreVersion = '3.2.0'
+
+        androidDeps = [
+                appcompat: "androidx.appcompat:appcompat:$appCompatVersion",
+                coreKtx: "androidx.core:core-ktx:$androidCoreKtxVersion",
+                constraintLayout: "androidx.constraintlayout:constraintlayout:$constraintVersion",
+        ]
+
+        kotlinDeps = [
+                kotlin: "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion"
+        ]
+
+        unitTestsDeps = [
+                junit: "junit:junit:$junitVersion",
+        ]
+
+        espressoDeps = [
+                core: "com.android.support.test.espresso:espresso-core:$espressoCoreVersion"
+        ]
+    }
+
     repositories {
         google()
         jcenter()
@@ -9,7 +43,7 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.5.3'
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
