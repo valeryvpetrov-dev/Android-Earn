@@ -6,4 +6,8 @@ import ru.valeryvpetrov.androidearn.common.BaseFragment
 class NativeAdFragment : BaseFragment() {
 
     override val layoutId = R.layout.fragment_native_ad
+
+    override fun setupViews() {
+        // TODO("not implemented")
+    }
 }
