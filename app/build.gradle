@@ -55,8 +55,13 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+
     implementation androidDeps.values()
+
+    implementation loggerDeps.values()
+
     implementation navigationDeps.values()
+
     testImplementation unitTestsDeps.values()
     androidTestImplementation espressoDeps.values()
 }
