@@ -18,6 +18,8 @@ buildscript {
 
         navigationVersion = '2.2.1'
 
+        mobileAdsSdkVersion = '18.3.0'
+
         junitVersion = '4.12'
         espressoCoreVersion = '3.2.0'
 
@@ -38,6 +40,10 @@ buildscript {
         navigationDeps = [
                 fragment: "androidx.navigation:navigation-fragment-ktx:$navigationVersion",
                 ui: "androidx.navigation:navigation-ui-ktx:$navigationVersion"
+        ]
+
+        mobileAdsDeps = [
+                modileAdsSdk: "com.google.android.gms:play-services-ads:$mobileAdsSdkVersion"
         ]
 
         unitTestsDeps = [
