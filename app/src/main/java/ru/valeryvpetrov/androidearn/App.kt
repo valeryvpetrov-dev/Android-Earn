@@ -5,7 +5,8 @@ import ru.valeryvpetrov.androidearn.logger.Logger
 
 class App : Application() {
 
-    private lateinit var logger: Logger
+    lateinit var logger: Logger
+        private set
 
     override fun onCreate() {
         super.onCreate()
