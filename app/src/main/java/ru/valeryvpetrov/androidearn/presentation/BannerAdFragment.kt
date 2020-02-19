@@ -12,9 +12,13 @@ class BannerAdFragment : BaseFragment() {
     override val layoutId = R.layout.fragment_banner_ad
 
     override fun setupViews() {
+        loadStandardBanner()
+    }
+
+    private fun loadStandardBanner() {
         val adRequest = AdRequest.Builder().build()
-        adView.loadAd(adRequest)
-        adView.adListener = object : AdListener() {
+        bannerStandardAdView.loadAd(adRequest)
+        bannerStandardAdView.adListener = object : AdListener() {
             // Handle add related events
             // For more information see: https://developers.google.com/android/reference/com/google/android/gms/ads/AdListener
 
