@@ -4,4 +4,7 @@
     <string name="native_ad_fragment_title">Native Ad</string>
     <string name="rewarded_ad_fragment_title">Rewarded Ad</string>
     <string name="banner_standard_description">Standard banner (320x50)</string>
+    <string name="banner_adaptive_description">Adaptive banner</string>
+
+    <string name="test_banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
 </resources>
